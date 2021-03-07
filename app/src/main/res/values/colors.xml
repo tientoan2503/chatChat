@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#109e92</color>
+<!--    Mau status bar-->
+    <color name="colorPrimaryDark">#109e92</color>
+    <color name="colorAccent">#109e92</color>
+
+    <color name="text_white">#FBF6F6</color>
+    <color name="text_color">#33364D</color>
+    <color name="background_color">#E1F3F2</color>
+    <color name="header_color">@color/colorPrimary</color>
+</resources>

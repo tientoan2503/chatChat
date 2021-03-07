@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="About me"
+        android:textColor="#F35044"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/clone_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_about"
+        android:layout_marginTop="5dp"
+        android:text="This app clone by:"
+        android:textColor="#F35044"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clone_by"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Nguyễn Tiến Toàn"
+        android:textColor="#F35044"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="5dp"
+        android:text="Contact me:"
+        android:textColor="#F35044"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="tientoanbkav@gmail.com"
+        android:textColor="#F35044"
+        android:textStyle="italic"/>
+
+</RelativeLayout>

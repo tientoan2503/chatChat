@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avt_current"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/avt_default" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/status_on"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="-10dp"
+                android:layout_below="@id/avt_current"
+                android:layout_toRightOf="@id/avt_current"
+                android:background="@drawable/user_status_on" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/status_off"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:visibility="gone"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="-10dp"
+                android:layout_below="@id/avt_current"
+                android:layout_toRightOf="@id/avt_current"
+                android:background="@drawable/user_status_off" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/current_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/semibold"
+            android:text="Toan"
+            android:textSize="18sp" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_message"
+        android:layout_width="match_parent"
+        android:background="@color/background_color"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@id/input_layout"
+        android:layout_below="@id/tool_bar" />
+
+    <RelativeLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/edt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_send"
+            android:paddingLeft="10dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/type_a_message"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_send"
+            android:clickable="true" />
+
+    </RelativeLayout>
+</RelativeLayout>
